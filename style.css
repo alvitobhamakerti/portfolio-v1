@@ -16,23 +16,6 @@ body {
   overflow-x: hidden;
   /* height: 1500px; */
 }
-/* 
-button {
-  display: flex;
-  background-color: #02275d;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px 15px;
-  border: #02275d;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: white;
-  color: #02275d;
-} */
 
 nav {
   position: fixed;
@@ -180,7 +163,7 @@ nav ul li a:hover {
   background-image: url("asset/backgroundPattern.svg");
   background-repeat: repeat;
   background-size: 40rem 40rem;
-  opacity: 0.15;
+  opacity: 0.1;
   z-index: -100;
   position: absolute;
   inset: 0px;
