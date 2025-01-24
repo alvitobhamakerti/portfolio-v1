@@ -92,7 +92,6 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  gap: 20px;
 }
 
 .grid-item1 {
@@ -102,7 +101,7 @@ nav ul li a:hover {
   /* width: 100%; */
   max-width: 1000px;
   margin: 50px auto;
-  padding: 30px;
+  /* padding: 30px; */
   /* background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
@@ -162,8 +161,8 @@ nav ul li a:hover {
 .background-pattern {
   background-image: url("asset/backgroundPattern.svg");
   background-repeat: repeat;
-  background-size: 40rem 40rem;
-  opacity: 0.1;
+  background-size: 60rem 60rem;
+  opacity: 0.05;
   z-index: -100;
   position: absolute;
   inset: 0px;
@@ -179,7 +178,7 @@ nav ul li a:hover {
   color: #036196;
   font-family: "Roboto", serif;
   text-align: center;
-  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 footer {
@@ -198,10 +197,11 @@ footer span {
 
 .grid-footerutama {
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
   gap: 20px;
 }
 
@@ -226,11 +226,102 @@ footer span {
   gap: 20px;
 }
 
-.container {
-  display: flex;
-  overflow: hidden;
-  position: relative;
+.card-projects {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  padding: 30px;
+  gap: 50px;
   justify-content: center;
+}
+
+.project-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02275d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+}
+
+.bagian-card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.desc-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* font-size: x-large; */
+  font-family: "Roboto", serif;
+  font-weight: desc;
+  font-size: 16px;
+}
+
+.project-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02275d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+}
+
+.bagian-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.desc-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* font-size: x-large; */
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.btn-seemore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: "Roboto", serif;
+  font-weight: 500;
 }
 
 /* .circle-bottom  */
