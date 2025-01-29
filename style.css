@@ -18,20 +18,20 @@ body {
 }
 
 nav {
+  display: flex;
   position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
   top: 10px;
   left: 0;
   right: 0;
-  max-width: 1400px; /* Menentukan lebar maksimal navbar */
-  width: 100%; /* Navbar memenuhi lebar layar */
-  margin: 0 auto; /* Memposisikan navbar di tengah dengan jarak seimbang di kanan dan kiri */
-  display: flex;
-  background-color: white;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  justify-content: space-between;
-  align-items: center;
   z-index: 100;
 }
 
@@ -88,7 +88,9 @@ nav ul li a:hover {
 
 .grid-utama {
   margin: 0 auto;
-  width: 100%;
+  padding: 0;
+  max-width: auto;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -101,6 +103,7 @@ nav ul li a:hover {
   /* width: 100%; */
   max-width: 1000px;
   margin: 50px auto;
+  font-family: "Roboto", serif;
   /* padding: 30px; */
   /* background-color: white;
   border-radius: 10px;
@@ -162,7 +165,7 @@ nav ul li a:hover {
   background-image: url("asset/backgroundPattern.svg");
   background-repeat: repeat;
   background-size: 60rem 60rem;
-  opacity: 0.05;
+  opacity: 0.02;
   z-index: -100;
   position: absolute;
   inset: 0px;
@@ -184,13 +187,13 @@ nav ul li a:hover {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #036196;
+  background-color: white;
   height: 100px;
   width: 100%;
 }
 
 footer span {
-  color: white;
+  color: #036196;
   font-family: "Roboto", serif;
   text-align: start;
 }
