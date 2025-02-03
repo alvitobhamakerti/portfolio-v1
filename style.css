@@ -336,6 +336,31 @@ footer span {
   font-weight: 500;
 }
 
+.contact-me {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  padding: 30px;
+  /* gap: 50px; */
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02275d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
 /* .circle-bottom  */
 /* .circle-top {
   position: absolute;
