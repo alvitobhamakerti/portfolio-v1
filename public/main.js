@@ -13,13 +13,13 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASURMENT_ID,
+  apiKey: "AIzaSyDAb1Icl_-xVlMwkpcIGDd1O137WkCv3xI",
+  authDomain: "portfolio-v1-7a9f3.firebaseapp.com",
+  projectId: "portfolio-v1-7a9f3",
+  storageBucket: "portfolio-v1-7a9f3.firebasestorage.app",
+  messagingSenderId: "195593745014",
+  appId: "1:195593745014:web:43694e79338dc06f722557",
+  measurementId: "G-30JXECCMDG",
 };
 
 // Initialize Firebase
@@ -53,12 +53,43 @@ async function pushData(nama, email, phoneNum, description) {
   }
 }
 
+function clearform() {
+  document.getElementById("submitForm").reset();
+}
+
+function berhasilSubmit() {
+  const toast = document.getElementById("toast-success");
+  toast.classList.remove("hidden");
+
+  setTimeout(() => {
+    toast.classList.add("opacity-0");
+  }, 3000);
+}
+
+function gagalSubmit() {
+  const toast = document.getElementById("toast-failed");
+  toast.classList.remove("opacity-0", "hidden");
+
+  setTimeout(() => {
+    toast.classList.add("opacity-0");
+  }, 3000);
+}
+
 document.getElementById("submitForm").addEventListener("submit", function (e) {
   console.log(e);
   e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phoneNum = document.getElementById("phoneNum").value;
-  const description = document.getElementById("description").value;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phoneNum = document.getElementById("phoneNum").value.trim();
+  const description = document.getElementById("description").value.trim();
+
+  if (!name || !email || !phoneNum || !description) {
+    gagalSubmit();
+    return;
+  }
+
   pushData(name, email, phoneNum, description);
+
+  clearform();
+  berhasilSubmit();
 });

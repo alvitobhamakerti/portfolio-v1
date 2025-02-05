@@ -91,7 +91,7 @@ nav ul li a:hover {
   padding: 0;
   max-width: auto;
   /* width: 100%; */
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
@@ -164,7 +164,7 @@ nav ul li a:hover {
   background-image: url("asset/backgroundPattern.svg");
   background-repeat: repeat;
   background-size: 60rem 60rem;
-  opacity: 0.02;
+  opacity: 0.05;
   z-index: -100;
   position: absolute;
   inset: 0px;
