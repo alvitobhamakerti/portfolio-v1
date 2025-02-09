@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -25,11 +29,9 @@
       <div class="kontent">
         <nav>
           <div class="logo-company">
-            <img class="logo" src="asset/logo.png" alt="logo" />
-            <span class="font-bold text-[#036196] mr-1 text-xl font-"
-              >Alvito's</span
-            >
-            <span class="m-0 font-normal color-[#000000] text-xl">Design</span>
+            <img class="logo" src="asset/logo-portfolio.png" alt="logo" />
+            <span class="font-bold text-[#036196] mr-1 text-xl">Vito's</span>
+            <span class="m-0 font-normal color-[#000000] text-xl">Designs</span>
           </div>
           <div>
             <ul>
@@ -48,8 +50,8 @@
             </button>
           </div>
         </nav>
-        <div class="grid-utama grid grid-cols-4 gap-0">
-          <section class="grid-item1 col-span-3">
+        <div class="grid-utama grid grid-cols-2 gap-0">
+          <section class="grid-item1 col-span-1">
             <div class="flex justify-center flex-col m-[10px] mx-5">
               <h1 class="text-perkenalan">Hi, Welcome to My Portfolio!</h1>
               <p class="text-paragraph">
@@ -73,17 +75,17 @@
               </div>
             </div>
           </section>
-          <section class="grid-item2">
+          <section class="grid-item2 col-span-1">
             <div class="flex justify-center flex-col m-[10px] mx-5">
               <img
-                class="private-photo object-cover !p-0 shadow-xl"
+                class="private-photo object-cover shadow-xl"
                 src="asset/fofofofo.png"
                 alt="pribadi-foto"
               />
             </div>
           </section>
         </div>
-        <div class="mx-5">
+        <div class="grid-slogan bg-white rounded-2xl">
           <div class="slogan p-10">
             <h1>"Creativity has no limit"</h1>
           </div>
@@ -109,12 +111,6 @@
               MERUPAKAN PROJECT YANG ASJDHASDIASDHAS KASDKAHSDAKSD
               ASDKJABSDKJASDBAKS CKJASDKJASDASKJ KLAISNDAKSJDBAS
             </p>
-            <button
-              class="btn-seemore bg-[#036196] text-white text-sm font-semibold hover:bg-white hover:text-[#036196] border-2 border-[#036196] rounded-md p-2 gap-2"
-            >
-              See more
-              <i class="fas fa-arrow-right"></i>
-            </button>
           </div>
           <div class="bagian-card2">
             <div class="project-card2 overflow-hidden relative">
@@ -136,19 +132,25 @@
               MERUPAKAN PROJECT YANG ASJDHASDIASDHAS KASDKAHSDAKSD
               ASDKJABSDKJASDBAKS CKJASDKJASDASKJ KLAISNDAKSJDBAS
             </p>
-            <button
-              class="btn-seemore bg-[#036196] text-white text-sm font-semibold hover:bg-white hover:text-[#036196] border-2 border-[#036196] rounded-md p-2 gap-2"
-            >
-              See more
-              <i class="fas fa-arrow-right"></i>
-            </button>
           </div>
         </div>
         <div class="contact-me grid grid-cols-2 gap-0">
           <div
-            class="contact-info flex justify-center items-center bg-[#036196]"
+            class="contact-info relative overflow-hidden items-center bg-[#02275d]"
           >
-            <h1 class="text-white">Contact Information</h1>
+            <div class="contact-info-pattern">
+              <img
+                src="asset/patternCard.svg"
+                alt=""
+                class="w-[15rem] h-[15rem] -rotate-45 absolute -bottom-[7rem] -left-[8rem] opacity-50"
+              />
+              <img
+                src="asset/patternCard.svg"
+                alt=""
+                class="w-[15rem] h-[15rem] -rotate-45 absolute -top-[7rem] -right-[8rem] opacity-50"
+              />
+              <section class="text-white">Contact Information</section>
+            </div>
           </div>
           <div
             class="contact-form flex justify-start col-span-1 p-5 items-center"
@@ -161,7 +163,7 @@
                     id="name"
                     placeholder="John Doe"
                     type="text"
-                    class="flex justify-center border border-black rounded-md w-full h-[3em] mb-3 pl-3 bg-opacity-0"
+                    class="flex justify-center border border-grey-500 rounded-md w-full h-[3em] mb-5 pl-3 bg-opacity-0"
                   />
                 </div>
                 <div class="flex justify-start gap-3">
@@ -171,7 +173,7 @@
                       id="email"
                       placeholder="johndoe12@gmail.com"
                       type="email"
-                      class="flex justify-center border border-black rounded-md w-full h-[3em] mb-3 pl-3"
+                      class="flex justify-center border border-grey-500 rounded-md w-full h-[3em] mb-5 pl-3"
                     />
                   </div>
                   <div class="flex flex-col w-full">
@@ -180,7 +182,7 @@
                       id="phoneNum"
                       type="number"
                       placeholder="(+62)812-1231-4422"
-                      class="flex justify-center border border-black rounded-md w-full h-[3em] mb-3 pl-3"
+                      class="flex justify-center border border-grey-500 rounded-md w-full h-[3em] mb-5 pl-3"
                     />
                   </div>
                 </div>
@@ -190,7 +192,7 @@
                     id="description"
                     placeholder="Write your description here..."
                     type="text"
-                    class="flex justify-start border border-black rounded-md w-full h-[10em] p-3"
+                    class="flex justify-start border border-grey-500 rounded-md w-full h-[10em] p-3"
                   ></textarea>
                 </div>
                 <div class="flex justify-end mt-5">
