@@ -88,26 +88,45 @@ nav ul li a:hover {
 .grid-utama {
   margin: 0 auto;
   padding: 0;
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1800px;
+  /* width: 100%; */
   display: flex;
-  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.grid-item1,
-.grid-item2 {
+.grid-item1 {
   margin-top: 130px !important;
-  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 1000px;
+  /* max-width: 1000px; */
   margin: 50px auto;
   font-family: "Roboto", serif;
   /* padding: 30px; */
+  margin-left: 80px;
+}
+
+.grid-item2 {
+  /* margin-top: 130px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; */
+  margin-top: 130px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  font-family: "Roboto", serif;
+  /* margin-left: 80px; */
 }
 
 .foto-pribadi {
@@ -139,19 +158,6 @@ nav ul li a:hover {
 .button-getintouch,
 .button-cv {
   font-family: "SF Pro Display", sans-serif;
-}
-
-/* 
-.grid-item2 {
-  margin-top: 130px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  margin: 50px auto;
-  font-family: "Roboto", serif;
-  margin-left: 80px;
 }
 
 .private-photo {
@@ -285,7 +291,7 @@ footer span {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  /* font-size: x-large; */
+  font-size: x-large;
   font-family: "SF Pro Display", sans-serif;
   font-weight: desc;
   font-size: 16px;
@@ -329,7 +335,7 @@ footer span {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  /* font-size: x-large; */
+  font-size: x-large;
   font-family: "SF Pro Display", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -341,7 +347,7 @@ footer span {
   width: 100%;
   display: grid;
   padding: 30px;
-  /* gap: 50px; */
+  gap: 50px;
   justify-content: center;
 }
 
@@ -355,8 +361,7 @@ footer span {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* .circle-bottom  */
-/* .circle-top {
+.circle-bottom .circle-top {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -368,9 +373,9 @@ footer span {
 .circle-top {
   top: -50px;
   left: -50px;
-} */
+}
 
-/* .circle-bottom {
+.circle-bottom {
   bottom: -10rem;
   right: -50px;
-} */
+}
