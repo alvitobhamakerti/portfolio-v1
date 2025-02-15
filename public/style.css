@@ -105,6 +105,7 @@ nav ul li a:hover {
   margin: 50px auto;
   font-family: "Roboto", serif;
   /* padding: 30px; */
+  margin-left: 80px;
 }
 
 .foto-pribadi {
@@ -159,7 +160,7 @@ nav ul li a:hover {
   max-width: 1000px;
   margin: 50px auto;
   font-family: "Roboto", serif;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 
 .private-photo {
